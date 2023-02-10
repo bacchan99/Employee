@@ -24,6 +24,7 @@ public class EmployeeController {
 
 	@PostMapping("/employees")
 	public Employee saveEmployee(@Valid @RequestBody Employee employee) {
+		System.out.println("**********TEST***********");
 		return employeeService.saveEmployee(employee);
 
 	}
